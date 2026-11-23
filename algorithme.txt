@@ -1,0 +1,33 @@
+Variables :
+    a, b, c : Entiers
+    delta, x, x1, x2 : Réels
+
+Début
+
+    Lire(a)
+
+    TantQue a = 0 Faire
+        Ecrire("a doit être différent de 0")
+        Lire(a)
+    FinTantQue
+
+    Lire(b)
+    Lire(c)
+
+    delta ← b*b - 4*a*c
+
+    Si delta < 0 Alors
+        Ecrire("Aucune solution réelle")
+
+    Sinon Si delta = 0 Alors
+        x ← -b / (2*a)
+        Ecrire("Une seule solution : ", x)
+
+    Sinon
+        x1 ← (-b - Racine(delta)) / (2*a)
+        x2 ← (-b + Racine(delta)) / (2*a)
+
+        Ecrire("Deux solutions : ", x1, " et ", x2)
+    FinSi
+
+Fin
