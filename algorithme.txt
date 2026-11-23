@@ -1,7 +1,6 @@
 Variables :
     a, b, c : Entiers
     delta, x, x1, x2 : Réels
-
 Début
 
     Lire(a)
